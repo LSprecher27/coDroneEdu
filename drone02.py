@@ -11,16 +11,17 @@ for i in range(4):                  # do this four times
     drone.move_forward(20, "cm", 1)
     drone.turn_left()               # turn 90 from where it is facing now
 '''
-drone.move_forward(83, "in", 1)
-drone.turn_left(degree, timeout)
-
-drone.move_forward(43, "in", 1)
+drone.takeoff()
+drone.move_forward(65, "in", 0.5)
 drone.turn_right()
 
-drone.move_forward(66, "in", 1)
+drone.move_forward(24, "in", 0.5)
+drone.turn_left()
+
+drone.move_forward(60, "in", 0.5)
 drone.turn_right()
 
-drone.move_forward(91, "in", 1)
+drone.move_forward(52, "in", 0.5)
 
 drone.hover(1)
 
